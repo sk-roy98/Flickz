@@ -13,7 +13,7 @@ function SingleContent({
     vote_average,
   }) {
     return (
-        <ContentModal>
+        <ContentModal media_type={media_type} id={id}>
 
             <Badge
                 badgeContent={vote_average}

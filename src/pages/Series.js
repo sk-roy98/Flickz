@@ -29,7 +29,7 @@ function Series() {
 
   return (
     <div>
-      <span className="pageTitle">Discover Series</span>
+      <span className="page-title">Discover Series</span>
       <Genres
         type="tv"
         selectedGenres={selectedGenres}
