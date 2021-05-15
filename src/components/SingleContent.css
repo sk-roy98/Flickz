@@ -1,18 +1,22 @@
 .media {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     padding: 5px;
     margin: 5px 0;
     background-color: #282c34;
     border-radius: 10px;
     position: relative;
     font-family: "Montserrat", sans-serif;
+    transition: 0.7s;
   }
   
   .media:hover {
-    background-color: white;
+    background-color: #7105ff;
+    transform: scale(1.1);
     color: black;
+    z-index: 90;
+    transition: 0.7s;
   }
   
   @media (max-width: 550px) {

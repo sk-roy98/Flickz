@@ -50,7 +50,7 @@ import {
     return (
       <div>
         <ThemeProvider theme={darkTheme}>
-          <div style = {{display: "flex", margin: "15px 5rem"}}>
+          <div style = {{display: "flex", margin: "15px 10px"}}>
             <TextField
               style={{ flex: 1 }}
               className="searchBox"
@@ -61,7 +61,7 @@ import {
             <Button
               onClick={fetchSearch}
               variant="contained"
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: 10, backgroundColor:"#7105ff", color:"000"}}
             >
               <SearchIcon fontSize="large" />
             </Button>

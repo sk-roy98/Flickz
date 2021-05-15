@@ -32,7 +32,7 @@ function Movies() {
 
     return (
         <div>
-            <span className = 'page-title'>Movies</span>
+            <span className = 'page-title'>Discover Movies</span>
             <Genres
                 type="movie"
                 selectedGenres={selectedGenres}

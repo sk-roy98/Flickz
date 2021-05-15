@@ -12,7 +12,6 @@ import {
 import "./ContentModal.css";
 import { Button } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     width: "90%",
     height: "80%",
-    backgroundColor: "#39445a",
+    backgroundColor: "#191d24",
     border: "1px solid #282c34",
     borderRadius: 10,
     color: "white",
@@ -93,7 +92,7 @@ function ContentModal({ children, media_type, id }) {
       >
         <Fade in={open}>
           {content && (
-            <div className={classes.paper}>
+            <div className={classes.paper} style={{width: "73%", height: "73%"}}>
               <div className="ContentModal">
                 <img
                   src={
@@ -119,7 +118,7 @@ function ContentModal({ children, media_type, id }) {
                     {(
                       content.first_air_date ||
                       content.release_date ||
-                      "-----"
+                      "N/A"
                     ).substring(0, 4)}
                     )
                   </span>
@@ -131,14 +130,11 @@ function ContentModal({ children, media_type, id }) {
                     {content.overview}
                   </span>
 
-                  <div>
-                    <Carousel id={id} media_type={media_type} />
-                  </div>
-
                   <Button
+                    className="modal__button"
                     variant="contained"
                     startIcon={<YouTubeIcon />}
-                    color="secondary"
+                    style={{backgroundColor: '#7105ff', color: '#FFFFFF', marginTop: "3px"}}
                     target="__blank"
                     href={`https://www.youtube.com/watch?v=${video}`}
                   >

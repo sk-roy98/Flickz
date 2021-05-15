@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     width: "100%",
     position: "fixed",
     bottom: 0,
-    backgroundColor: "#2d313a",
+    backgroundColor: "#191d24",
     zIndex: 100,
   },
 });
@@ -45,22 +45,22 @@ export default function BottomNav() {
       className={classes.root}
       >
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "#9d59f5" }}
         label="Trending"
         icon={<WhatshotIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "#9d59f5" }}
         label="Movies"
         icon={<MovieIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "#9d59f5" }}
         label="TV Series"
         icon={<TvIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "#9d59f5" }}
         label="Search"
         icon={<SearchIcon />}
       />

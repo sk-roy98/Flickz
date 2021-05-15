@@ -4,16 +4,24 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    background-color: #39445a;
+    background-color: #191d24;
     font-family: "Montserrat", sans-serif;
-    font-size: 5vw;
-    padding-bottom: 15px;
-    box-shadow: 0px 1px 5px black;
-    color: white;
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: 10px;
+    padding: 8px 0;
+    box-shadow: 0px 3px 5px rgb(54, 36, 71);
+    color: #d7b8ff;
     z-index: 100;
   }
+
+.header:hover{
+  background-color: #7105ff;
+  color: black;
+  transition: 0.3s;
+}
   
-  @media (max-width: 1000px) {
+  @media (max-width: 700px) {
     .header {
       padding-top: 15px;
       font-size: 6.4vw;
